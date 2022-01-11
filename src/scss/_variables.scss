@@ -1,0 +1,37 @@
+:root {
+  --white: #fff;
+  --black: #08020d;
+  --gray: #e0e0e0;
+  --dark-gray: #cacaca;
+  --dark: #3c3b3d;
+  --green: #34c176;
+  --orange: #f89202;
+  --purple: #5328a1;
+  --red: #95390c;
+  --main-margin: 20px;
+}
+
+@for $i from 1 to 8 {
+  $size: 8 + $i * 8;
+  %text-size-#{$i} {
+    font-size: #{$size}px;
+    line-height: 1.5;
+    color: var(--dark);
+  }
+}
+
+%text-small {
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+%text-uppercase {
+  text-transform: uppercase;
+}
+
+%indent-none {
+  margin: 0;
+  padding: 0;
+}
+
+$mobile-width: 800px;

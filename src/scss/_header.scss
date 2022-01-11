@@ -1,0 +1,98 @@
+.header {
+  max-width: 1240px;
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  padding: 0 20px;
+  display: flex;
+  top: 25px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  align-items: center;
+  @media screen and (max-width: $mobile-width) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__logo-text {
+    margin: 0 90px 0 16px;
+    @extend %text-uppercase;
+    @extend %text-small;
+    color: var(--white);
+  }
+
+  &__nav-list {
+    @extend %indent-none;
+    display: flex;
+    @media screen and (max-width: $mobile-width) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 17px 0 18px;
+    }
+  }
+
+  &__nav-item {
+    list-style: none;
+    padding-right: 24px;
+    display: flex;
+    @media screen and (max-width: $mobile-width) {
+      padding-bottom: 3px;
+    }
+    &:last-of-type {
+      padding: 0;
+    }
+  }
+
+  &__nav-link {
+    @extend %text-small;
+    @extend %text-uppercase;
+    text-decoration: none;
+    color: var(--dark-gray);
+    &_selected {
+      color: var(--white);
+    }
+    &:last-of-type {
+      margin: 0;
+    }
+    @media screen and (max-width: $mobile-width) {
+      line-height: 13px;
+    }
+  }
+
+  &__form {
+    margin: auto 0 auto auto;
+    display: flex;
+    @media screen and (max-width: $mobile-width) {
+      margin: 0;
+    }
+  }
+
+  &__input {
+    @extend %indent-none;
+    width: 248px;
+    height: 25px;
+    border-radius: 25px;
+    border: 0px;
+    background-color: var(--dark);
+    box-sizing: border-box;
+    &::placeholder {
+      padding: 5px 0 5px 10px;
+      color: #757575;
+      @extend %text-uppercase;
+    }
+    @media screen and (max-width: $mobile-width) {
+      width: 374px;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--dark-gray);
+  background-color: var(--black);
+  position: relative;
+  @extend %indent-none;
+}
+
+@mixin titles-style {
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-weight: bold;
+  color: var(--white);
+  text-align: center;
+}
+
+h {
+  &1 {
+    @include titles-style();
+    font-size: 60px; 
+    @extend %indent-none;
+    @media screen and (max-width: $mobile-width) {
+      font-size: 30px;
+    }
+  }
+  &2 {
+    @include titles-style();
+    font-size: 38px;
+    @extend %indent-none;
+    @media screen and (max-width: $mobile-width) {
+      font-size: 18px;
+    }
+  }
+}
+
+p {
+  @extend %indent-none;
+}

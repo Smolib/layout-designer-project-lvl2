@@ -1,0 +1,62 @@
+.page-description {
+  height: calc(100vw / 1.92);
+  max-height: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/banner.png);
+  background-position: center;
+  background-size: cover;
+  @media screen and (max-width: $mobile-width) {
+    max-height: 853px;
+    height: 853px;
+    padding: 250px 0 201px;
+    box-sizing: border-box;
+  }
+  &__description {
+    @extend %text-size-1;
+    color: var(--white);
+    margin: 31px 0 17px;
+    text-align: center;
+    @media screen and (max-width: $mobile-width) {
+      margin: 16px 0;
+    }
+  }
+  &__input-text {
+    width: 273px;
+    box-sizing: border-box;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 2px solid var(--white);
+    margin-bottom: 24px;
+    &:first-of-type {
+      margin-right: 24px;
+      @media screen and (max-width: $mobile-width) {
+        margin-right: 0;
+      }
+    }
+    &::placeholder {
+      padding: 15px 0 11px 20.24px;
+      color: var(--white);
+    }
+    @media screen and (max-width: $mobile-width) {
+      width: 374px;
+      display: block;
+    }
+  }
+  &__button {
+    display: block;
+    width: 570px;
+    height: 57px;
+    border-radius: 5px;
+    border: 0;
+    background-color: var(--green);
+    @extend %text-uppercase;
+    color: var(--white);
+    @media screen and (max-width: $mobile-width) {
+      width: 374px;
+    }
+  }
+}
