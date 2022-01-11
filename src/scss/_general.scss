@@ -11,6 +11,7 @@ body {
   background-color: var(--black);
   position: relative;
   @extend %indent-none;
+  color: var(--white);
 }
 
 @mixin titles-style {

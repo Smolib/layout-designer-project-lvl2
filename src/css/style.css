@@ -11,10 +11,9 @@
   --main-margin: 20px;
 }
 
-.page-description__description {
+.artist__description, .subscription__description {
   font-size: 16px;
   line-height: 1.5;
-  color: var(--dark);
 }
 
 .header__nav-link, .header__logo-text {
@@ -22,7 +21,7 @@
   line-height: 1.5;
 }
 
-.page-description__button, .header__input::placeholder, .header__nav-link, .header__logo-text {
+.artist__button, .subscription__button, .header__input::placeholder, .header__nav-link, .header__logo-text {
   text-transform: uppercase;
 }
 
@@ -42,6 +41,7 @@ body {
   color: var(--dark-gray);
   background-color: var(--black);
   position: relative;
+  color: var(--white);
 }
 
 h1 {
@@ -167,9 +167,10 @@ h2 {
   }
 }
 
-.page-description {
+.subscription {
   height: 52.0833333333vw;
   max-height: 750px;
+  min-height: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -179,24 +180,23 @@ h2 {
   background-size: cover;
 }
 @media screen and (max-width: 800px) {
-  .page-description {
+  .subscription {
     max-height: 853px;
     height: 853px;
     padding: 250px 0 201px;
     box-sizing: border-box;
   }
 }
-.page-description__description {
-  color: var(--white);
+.subscription__description {
   margin: 31px 0 17px;
   text-align: center;
 }
 @media screen and (max-width: 800px) {
-  .page-description__description {
+  .subscription__description {
     margin: 16px 0;
   }
 }
-.page-description__input-text {
+.subscription__input-text {
   width: 273px;
   box-sizing: border-box;
   height: 50px;
@@ -205,25 +205,25 @@ h2 {
   border: 2px solid var(--white);
   margin-bottom: 24px;
 }
-.page-description__input-text:first-of-type {
+.subscription__input-text:first-of-type {
   margin-right: 24px;
 }
 @media screen and (max-width: 800px) {
-  .page-description__input-text:first-of-type {
+  .subscription__input-text:first-of-type {
     margin-right: 0;
   }
 }
-.page-description__input-text::placeholder {
+.subscription__input-text::placeholder {
   padding: 15px 0 11px 20.24px;
   color: var(--white);
 }
 @media screen and (max-width: 800px) {
-  .page-description__input-text {
+  .subscription__input-text {
     width: 374px;
     display: block;
   }
 }
-.page-description__button {
+.subscription__button {
   display: block;
   width: 570px;
   height: 57px;
@@ -233,9 +233,65 @@ h2 {
   color: var(--white);
 }
 @media screen and (max-width: 800px) {
-  .page-description__button {
+  .subscription__button {
     width: 374px;
   }
+}
+
+.artist {
+  height: 49.5vw;
+  max-height: 713px;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-image: url(../images/Morten\ Harket.png);
+  background-position: center;
+  background-size: cover;
+  padding: 250px 120px 0;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 800px) {
+  .artist {
+    max-height: 730px;
+    height: 730px;
+    padding: 225px 20px 224px;
+  }
+}
+.artist__description {
+  margin: 16px 0 48px;
+}
+.artist__button {
+  width: 200px;
+  height: 62px;
+  border-radius: 5px;
+  border: 0;
+  color: var(--white);
+  padding: 0;
+  margin-right: 19px;
+  margin-bottom: 24px;
+}
+.artist__button_color_purple {
+  background-color: var(--purple);
+}
+.artist__button_color_red {
+  background-color: var(--red);
+}
+@media screen and (max-width: 800px) {
+  .artist__button {
+    display: block;
+  }
+}
+.artist__button-inside {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.artist__button-img {
+  width: 20px;
+  padding-left: 31px;
+  padding-right: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

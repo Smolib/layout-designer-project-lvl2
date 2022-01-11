@@ -1,6 +1,7 @@
-.page-description {
+.subscription {
   height: calc(100vw / 1.92);
   max-height: 750px;
+  min-height: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +17,6 @@
   }
   &__description {
     @extend %text-size-1;
-    color: var(--white);
     margin: 31px 0 17px;
     text-align: center;
     @media screen and (max-width: $mobile-width) {

@@ -2,12 +2,54 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Портал Music Box - Smolib</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
+    <header class="header">
+      <div class="header__logo">
+        <img class="header__logo-img" src="images/logo.svg" alt="Логотип Music Box">
+        <span class="header__logo-text">Music Box</span>
+      </div>
+      <nav>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Каталог</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-link_selected" href="#">Исполнители</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <form class="header__form" action="">
+        <input class="header__input" name="search" placeholder="Поиск..." type="search">
+      </form>
+    </header>
+    <section id="page-description" class="artist">
+      <h1>Morten Harket</h1>
+      <p class="artist__description">24 875 поклонников</p>
+      <form>
+        <button class="artist__button artist__button_color_purple" name="button">
+          <div class="artist__button-inside">
+            <img class="artist__button-img" src="images/play-button-white.svg">
+            Микс
+          </div>
+        </button>
+        <button class="artist__button artist__button_color_red" name="button">
+          <div class="artist__button-inside">
+            <img class="artist__button-img"  src="images/heart-white.svg">
+            В избранное
+          </div>
+        </button>
+      </form>
+    </section>
   </body>
 </html>
