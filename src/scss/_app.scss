@@ -29,16 +29,10 @@
     margin-bottom: 16px;
   }
   &__button {
-    width: 131px;
-    height: 53px;
+    @extend %btn;
     background-color: var(--red);
-    font-size: 12.8px;
-    line-height: 19.2px;
-    cursor: pointer;
     color: var(--white);
     border-radius: 25px;
     border: 0;
-    text-align: center;
-    vertical-align: middle;
   }
 }

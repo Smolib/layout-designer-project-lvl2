@@ -27,7 +27,7 @@
 
   &__logo-text {
     margin: 0 90px 0 16px;
-    @extend %text-uppercase;
+    text-transform: uppercase;
     @extend %text-small;
     color: var(--white);
   }
@@ -56,7 +56,7 @@
 
   &__nav-link {
     @extend %text-small;
-    @extend %text-uppercase;
+    text-transform: uppercase;
     text-decoration: none;
     color: var(--dark-gray);
     &_selected {
@@ -89,7 +89,7 @@
     &::placeholder {
       padding: 5px 0 5px 10px;
       color: #757575;
-      @extend %text-uppercase;
+      text-transform: uppercase;
     }
     @media screen and (max-width: $mobile-width) {
       width: 374px;

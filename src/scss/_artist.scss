@@ -25,7 +25,7 @@
     height: 62px;
     border-radius: 5px;
     border: 0;
-    @extend %text-uppercase;
+    text-transform: uppercase;
     color: var(--white);
     padding: 0;
     margin-right: 19px;

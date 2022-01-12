@@ -31,13 +31,19 @@
   line-height: 1.5;
 }
 
-.news__button, .news__author, .pricing-forms__button, .pricing-forms__price-currency, .artist__button, .subscription__button, .header__input::placeholder, .header__nav-link, .header__logo-text {
-  text-transform: uppercase;
-}
-
 .app__text, .header__input, .header__nav-list, p, h3, h2, h1, body {
   margin: 0;
   padding: 0;
+}
+
+.app__button, .news__button {
+  width: 131px;
+  height: 53px;
+  font-size: 12.8px;
+  line-height: 19.2px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
 }
 
 @font-face {
@@ -123,6 +129,7 @@ h3 {
 }
 .header__logo-text {
   margin: 0 90px 0 16px;
+  text-transform: uppercase;
   color: var(--white);
 }
 .header__nav-list {
@@ -149,6 +156,7 @@ h3 {
   padding: 0;
 }
 .header__nav-link {
+  text-transform: uppercase;
   text-decoration: none;
   color: var(--dark-gray);
 }
@@ -183,6 +191,7 @@ h3 {
 .header__input::placeholder {
   padding: 5px 0 5px 10px;
   color: #757575;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 800px) {
   .header__input {
@@ -254,6 +263,7 @@ h3 {
   border: 0;
   background-color: var(--green);
   cursor: pointer;
+  text-transform: uppercase;
   color: var(--white);
 }
 @media screen and (max-width: 800px) {
@@ -291,6 +301,7 @@ h3 {
   height: 62px;
   border-radius: 5px;
   border: 0;
+  text-transform: uppercase;
   color: var(--white);
   padding: 0;
   margin-right: 19px;
@@ -380,6 +391,9 @@ h3 {
   margin-right: 16px;
   line-height: 1;
 }
+.pricing-forms__price-currency {
+  text-transform: uppercase;
+}
 .pricing-forms__form-description {
   text-align: center;
   padding-top: 64px;
@@ -391,6 +405,7 @@ h3 {
   color: var(--white);
   border-radius: 3px;
   border: 2px solid var(--white);
+  text-transform: uppercase;
   cursor: pointer;
   width: 318px;
   height: 66px;
@@ -477,20 +492,16 @@ h3 {
   text-decoration: none;
   color: var(--orange);
   margin: 0 18px 0 16px;
+  text-transform: uppercase;
 }
 .news__button {
   margin-top: 48px;
-  width: 135px;
-  height: 53px;
-  text-align: center;
-  vertical-align: middle;
   color: var(--dark-gray);
+  text-transform: uppercase;
   background-color: transparent;
   border-radius: 5px;
   border: 2px solid var(--dark-gray);
-  font-size: 12.8px;
-  line-height: 19.2px;
-  cursor: pointer;
+  width: 135px;
 }
 
 .app {
@@ -527,17 +538,10 @@ h3 {
   margin-bottom: 16px;
 }
 .app__button {
-  width: 131px;
-  height: 53px;
   background-color: var(--red);
-  font-size: 12.8px;
-  line-height: 19.2px;
-  cursor: pointer;
   color: var(--white);
   border-radius: 25px;
   border: 0;
-  text-align: center;
-  vertical-align: middle;
 }
 
 /*# sourceMappingURL=style.css.map */

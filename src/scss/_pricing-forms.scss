@@ -59,7 +59,7 @@
   }
   &__price-currency {
     @extend %text-size-3;
-    @extend %text-uppercase;
+    text-transform: uppercase;
   }
   &__form-description {
     text-align: center;
@@ -72,7 +72,7 @@
     color: var(--white);
     border-radius: 3px;
     border: 2px solid var(--white);
-    @extend %text-uppercase;
+    text-transform: uppercase;
     @extend %text-size-1;
     cursor: pointer;
     width: 318px;

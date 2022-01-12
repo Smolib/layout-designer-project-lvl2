@@ -24,13 +24,19 @@
   line-height: 1.5;
 }
 
-%text-uppercase {
-  text-transform: uppercase;
-}
-
 %indent-none {
   margin: 0;
   padding: 0;
 }
 
 $mobile-width: 800px;
+
+%btn {
+  width: 131px;
+  height: 53px;
+  font-size: 12.8px;
+  line-height: 19.2px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+}

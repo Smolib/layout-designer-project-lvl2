@@ -66,21 +66,16 @@
     text-decoration: none;
     color: var(--orange);
     margin: 0 18px 0 16px;
-    @extend %text-uppercase;
+    text-transform: uppercase;
   }
   &__button {
     margin-top: 48px;
-    width: 135px;
-    height: 53px;
-    text-align: center;
-    vertical-align: middle;
     color: var(--dark-gray);
-    @extend %text-uppercase;
+    text-transform: uppercase;
     background-color: transparent;
     border-radius: 5px;
     border: 2px solid var(--dark-gray);
-    font-size: 12.8px;
-    line-height: 19.2px;
-    cursor: pointer;
+    @extend %btn;
+    width: 135px;
   }
 }

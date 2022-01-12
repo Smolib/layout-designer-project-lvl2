@@ -54,7 +54,7 @@
     border: 0;
     background-color: var(--green);
     cursor: pointer;
-    @extend %text-uppercase;
+    text-transform: uppercase;
     color: var(--white);
     @media screen and (max-width: $mobile-width) {
       width: 374px;
