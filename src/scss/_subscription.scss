@@ -29,7 +29,7 @@
     height: 50px;
     background-color: transparent;
     border-radius: 3px;
-    border: 2px solid var(--white);
+    border: 2px solid var(--dark-gray);
     margin-bottom: 24px;
     &:first-of-type {
       margin-right: 24px;
@@ -53,6 +53,7 @@
     border-radius: 5px;
     border: 0;
     background-color: var(--green);
+    cursor: pointer;
     @extend %text-uppercase;
     color: var(--white);
     @media screen and (max-width: $mobile-width) {

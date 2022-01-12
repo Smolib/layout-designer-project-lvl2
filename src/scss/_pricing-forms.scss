@@ -7,6 +7,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 101px;
+  @media screen and (max-width: 1240px) {
+    justify-content: center;
+  }
   &__title {
     width: 100%;
   }
@@ -58,10 +61,6 @@
     @extend %text-size-3;
     @extend %text-uppercase;
   }
-  &__button {
-    width: 318px;
-    height: 66px;
-  }
   &__form-description {
     text-align: center;
     padding-top: 64px;
@@ -75,6 +74,9 @@
     border: 2px solid var(--white);
     @extend %text-uppercase;
     @extend %text-size-1;
+    cursor: pointer;
+    width: 318px;
+    height: 66px;
   }
   &__description {
     width: 100%;
