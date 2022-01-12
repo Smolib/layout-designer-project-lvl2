@@ -39,6 +39,14 @@ h {
       font-size: 18px;
     }
   }
+  &3 {
+  @include titles-style();
+  font-size: 24px;
+  @extend %indent-none;
+  @media screen and (max-width: $mobile-width) {
+    font-size: 16px;
+    }
+  }
 }
 
 p {

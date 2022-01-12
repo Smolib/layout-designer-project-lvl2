@@ -33,15 +33,68 @@
         <input class="header__input" name="search" placeholder="Поиск..." type="search">
       </form>
     </header>
-    <section id="page-description" class="subscription">
-      <h1>Онлайн музыка где угодно</h1>
-      <h2>Без ограничений</h2>
-      <p class="subscription__description">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
-      <form class="subscription__form">
-        <input class="subscription__input-text" name="name" placeholder="Имя" type="text">
-        <input class="subscription__input-text" name="email" placeholder="Email" type="email">
-        <button class="subscription__button" name="button">Получить доступ</button>
-      </form>
-    </section>
+    <main>
+      <section id="page-description" class="subscription">
+        <h1>Онлайн музыка где угодно</h1>
+        <h2>Без ограничений</h2>
+        <p class="subscription__description">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+        <form class="subscription__form">
+          <input class="subscription__input-text" name="name" placeholder="Имя" type="text">
+          <input class="subscription__input-text" name="email" placeholder="Email" type="email">
+          <button class="subscription__button" name="button">Получить доступ</button>
+        </form>
+      </section>
+      <section class="pricing-forms" id="page-pricing">
+        <h2 class="pricing-forms__title">Формы подписки</h2>
+        <div class="pricing-forms__one-form pricing-forms__one-form_type_free">
+          <h3>Бесплатная</h3>
+          <div class="pricing-forms__price">
+            <span class="pricing-forms__price-value">0</span>
+            <span class="pricing-forms__price-currency">руб.</span>
+          </div>
+          <form>
+            <button class="pricing-forms__button">Оформить</button>
+          </form>
+          <p class="pricing-forms__form-description">
+            Оплата в месяц.
+            Бесплатный тариф предоставляет доступ ко всей коллекции музыки.
+            Присутствует реклама
+          </p>
+        </div>
+        <div class="pricing-forms__one-form pricing-forms__one-form_type_standart">
+          <h3>Стандартная</h3>
+          <div class="pricing-forms__price">
+            <span class="pricing-forms__price-value">250</span>
+            <span class="pricing-forms__price-currency">руб.</span>
+          </div>
+          <form>
+            <button class="pricing-forms__button">Оформить</button>
+          </form>
+          <p class="pricing-forms__form-description">
+            Оплата в месяц.
+            Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве
+          </p>
+        </div>
+        <div class="pricing-forms__one-form pricing-forms__one-form_type_premium">
+          <h3>Премиум</h3>
+          <div class="pricing-forms__price">
+            <span class="pricing-forms__price-value">500</span>
+            <span class="pricing-forms__price-currency">руб.</span>
+          </div>
+          <form>
+            <button class="pricing-forms__button">Оформить</button>
+          </form>
+          <p class="pricing-forms__form-description">
+            Оплата в месяц.
+            Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве
+          </p>
+        </div>
+        <p class="pricing-forms__description">
+          На всех тарифах возможно прослушивание музыки с мобильных устройств.
+          На премиум тарифе вы можете скачать все композиции на ваше устройство
+          и слушать музыку без подключения к интернету
+        </p>
+      </section>
+    </main>
   </body>
 </html>

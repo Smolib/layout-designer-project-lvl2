@@ -1,0 +1,85 @@
+.pricing-forms {
+  max-width: 1240px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 101px;
+  &__title {
+    width: 100%;
+  }
+  &__one-form {
+    width: 368.5px;
+    border-radius: 15px;
+    margin:45px 20px 43px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 24px;
+    padding-bottom: 64px;
+    box-sizing: border-box;
+    &:first-of-type {
+      margin-top: 45px;
+    }
+    &_type {
+      &_free {
+        background-image: url(../images/subscribe_1.png);
+      }
+      &_standart {
+        background-image: url(../images/subscribe_2.png);
+      }
+      &_premium {
+        background-image: url(../images/subscribe_3.png);
+      }
+    }
+    @media screen and (max-width: $mobile-width) {
+      padding-top: 19px;
+      margin-top: 0;
+      &:first-of-type {
+        margin-top: 45px;
+      }
+    }
+  }
+  &__price {
+    margin: 200px 0 40px;
+    display: flex;
+    align-items: flex-start;
+  }
+  &__price-value {
+    margin-right: 16px;
+    @extend %text-size-7;
+    line-height: 1;
+  }
+  &__price-currency {
+    @extend %text-size-3;
+    @extend %text-uppercase;
+  }
+  &__button {
+    width: 318px;
+    height: 66px;
+  }
+  &__form-description {
+    text-align: center;
+    padding-top: 64px;
+    font-size: 12.8px;
+    margin: 0 29px 0 22px;
+  }
+  &__button {
+    background-color: transparent;
+    color: var(--white);
+    border-radius: 3px;
+    border: 2px solid var(--white);
+    @extend %text-uppercase;
+    @extend %text-size-1;
+  }
+  &__description {
+    width: 100%;
+    margin: 0 20px;
+    text-align: center;
+    @extend %text-size-1;
+  }
+}
