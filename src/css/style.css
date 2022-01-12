@@ -11,7 +11,7 @@
   --main-margin: 20px;
 }
 
-.news__news-text, .pricing-forms__description, .pricing-forms__button, .artist__description, .subscription__description {
+.app__text, .news__news-text, .pricing-forms__description, .pricing-forms__button, .artist__description, .subscription__description {
   font-size: 16px;
   line-height: 1.5;
 }
@@ -35,7 +35,7 @@
   text-transform: uppercase;
 }
 
-.header__input, .header__nav-list, p, h3, h2, h1, body {
+.app__text, .header__input, .header__nav-list, p, h3, h2, h1, body {
   margin: 0;
   padding: 0;
 }
@@ -488,9 +488,56 @@ h3 {
   background-color: transparent;
   border-radius: 5px;
   border: 2px solid var(--dark-gray);
-  font-size: 12px;
-  line-height: 19px;
+  font-size: 12.8px;
+  line-height: 19.2px;
   cursor: pointer;
+}
+
+.app {
+  padding: 100px 20px;
+  max-width: 1240px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.app__block {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin: 48px auto 0;
+}
+@media screen and (max-width: 800px) {
+  .app__block {
+    flex-direction: column;
+    align-items: center;
+    margin: 48px 0 0;
+  }
+}
+.app__text-block {
+  max-width: 600px;
+  margin-right: min(144px, 10vw);
+  margin-top: 16px;
+}
+@media screen and (max-width: 800px) {
+  .app__text-block {
+    margin-right: 0;
+  }
+}
+.app__text {
+  margin-bottom: 16px;
+}
+.app__button {
+  width: 131px;
+  height: 53px;
+  background-color: var(--red);
+  font-size: 12.8px;
+  line-height: 19.2px;
+  cursor: pointer;
+  color: var(--white);
+  border-radius: 25px;
+  border: 0;
+  text-align: center;
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=style.css.map */
