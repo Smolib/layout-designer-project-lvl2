@@ -11,7 +11,7 @@
   --main-margin: 20px;
 }
 
-.footer__link, .app__text, .news__news-text, .pricing-forms__description, .pricing-forms__button, .artist__description, .subscription__description {
+.discography__album-date, .footer__link, .app__text, .news__news-text, .pricing-forms__description, .pricing-forms__button, .artist__description, .subscription__description {
   font-size: 16px;
   line-height: 1.5;
 }
@@ -46,7 +46,7 @@
   vertical-align: middle;
 }
 
-.popular-track, .footer__menu-bottom, .footer__menu-top, .app, .news, .pricing-forms, .header {
+.discography, .popular-track, .footer__menu-bottom, .footer__menu-top, .app, .news, .pricing-forms, .header {
   max-width: 1240px;
   box-sizing: border-box;
   width: 100%;
@@ -643,6 +643,7 @@ h3 {
 }
 .popular-track__artist {
   font-size: 12.8px;
+  color: var(--gray);
 }
 .popular-track__time {
   margin-left: auto;
@@ -653,6 +654,31 @@ h3 {
   .popular-track__time {
     margin-right: 0;
   }
+}
+
+.discography {
+  padding-top: 100px;
+}
+.discography__title {
+  text-align: left;
+}
+.discography__flex-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 48px;
+}
+.discography__disk-block {
+  margin-right: 50px;
+  margin-bottom: 25px;
+  width: clamp(137px, 20vw, 250px);
+}
+.discography__album-image {
+  width: 100%;
+}
+.discography__album-name {
+  font-size: 18px;
+  text-transform: none;
+  margin-top: 13px;
 }
 
 /*# sourceMappingURL=style.css.map */
