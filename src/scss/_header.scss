@@ -1,14 +1,9 @@
 .header {
-  max-width: 1240px;
-  box-sizing: border-box;
-  width: 100%;
   position: absolute;
-  padding: 0 20px;
   display: flex;
   top: 25px;
   left: 0;
   right: 0;
-  margin: auto;
   align-items: center;
   @media screen and (max-width: $mobile-width) {
     flex-direction: column;

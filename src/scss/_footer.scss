@@ -1,11 +1,8 @@
 .footer {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
   &__menu-top {
-    width: 100%;
-    max-width: 1240px;
-    box-sizing: border-box;
+    @extend %section-size;
     padding: 62px 20px 72px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 270px);
     column-gap: min(40px, 100vw / 30);
@@ -51,11 +48,8 @@
     @extend %indent-none;
   }
   &__menu-bottom {
-    width: 100%;
-    max-width: 1240px;
+    @extend %section-size;
     padding: 40px 20px 49px;
-    box-sizing: border-box;
-    margin: 0 auto;
     @media screen and (max-width: $mobile-width) {
       display: flex;
       flex-direction: column;

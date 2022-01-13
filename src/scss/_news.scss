@@ -1,8 +1,6 @@
 .news {
-  max-width: 1240px;
-  box-sizing: border-box;
+  @extend %section-size;
   padding: 100px 20px 0;
-  margin: auto;
   @media screen and (max-width: $mobile-width) {
     display: flex;
     flex-direction: column;

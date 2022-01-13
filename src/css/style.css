@@ -46,6 +46,15 @@
   vertical-align: middle;
 }
 
+.footer__menu-bottom, .footer__menu-top, .app, .news, .pricing-forms {
+  max-width: 1240px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-Regular.ttf");
@@ -101,16 +110,11 @@ h3 {
 }
 
 .header {
-  max-width: 1240px;
-  box-sizing: border-box;
-  width: 100%;
   position: absolute;
-  padding: 0 20px;
   display: flex;
   top: 25px;
   left: 0;
   right: 0;
-  margin: auto;
   align-items: center;
 }
 @media screen and (max-width: 800px) {
@@ -331,11 +335,7 @@ h3 {
 }
 
 .pricing-forms {
-  max-width: 1240px;
-  box-sizing: border-box;
-  width: 100%;
   display: flex;
-  margin: auto;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 101px;
@@ -351,7 +351,7 @@ h3 {
 .pricing-forms__one-form {
   width: 368.5px;
   border-radius: 15px;
-  margin: 45px 20px 43px;
+  margin: 45px 0 43px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -373,6 +373,11 @@ h3 {
 .pricing-forms__one-form_type_premium {
   background-image: url(../images/subscribe_3.png);
 }
+@media screen and (max-width: 1240px) {
+  .pricing-forms__one-form {
+    margin-right: 20px;
+  }
+}
 @media screen and (max-width: 800px) {
   .pricing-forms__one-form {
     padding-top: 19px;
@@ -380,6 +385,7 @@ h3 {
   }
   .pricing-forms__one-form:first-of-type {
     margin-top: 45px;
+    margin-right: 0px;
   }
 }
 .pricing-forms__price {
@@ -417,10 +423,7 @@ h3 {
 }
 
 .news {
-  max-width: 1240px;
-  box-sizing: border-box;
   padding: 100px 20px 0;
-  margin: auto;
 }
 @media screen and (max-width: 800px) {
   .news {
@@ -507,8 +510,6 @@ h3 {
 .app {
   padding: 100px 20px;
   max-width: 1240px;
-  box-sizing: border-box;
-  margin: 0 auto;
 }
 .app__block {
   display: flex;
@@ -548,11 +549,7 @@ h3 {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 .footer__menu-top {
-  width: 100%;
-  max-width: 1240px;
-  box-sizing: border-box;
   padding: 62px 20px 72px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 270px);
   column-gap: min(40px, 3.3333333333vw);
@@ -602,11 +599,7 @@ h3 {
   size: 1px;
 }
 .footer__menu-bottom {
-  width: 100%;
-  max-width: 1240px;
   padding: 40px 20px 49px;
-  box-sizing: border-box;
-  margin: 0 auto;
 }
 @media screen and (max-width: 800px) {
   .footer__menu-bottom {
