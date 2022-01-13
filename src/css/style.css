@@ -11,7 +11,7 @@
   --main-margin: 20px;
 }
 
-.app__text, .news__news-text, .pricing-forms__description, .pricing-forms__button, .artist__description, .subscription__description {
+.footer__link, .app__text, .news__news-text, .pricing-forms__description, .pricing-forms__button, .artist__description, .subscription__description {
   font-size: 16px;
   line-height: 1.5;
 }
@@ -31,7 +31,7 @@
   line-height: 1.5;
 }
 
-.app__text, .header__input, .header__nav-list, p, h3, h2, h1, body {
+.footer__line, .app__text, .header__input, .header__nav-list, p, h3, h2, h1, body {
   margin: 0;
   padding: 0;
 }
@@ -542,6 +542,77 @@ h3 {
   color: var(--white);
   border-radius: 25px;
   border: 0;
+}
+
+.footer {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+.footer__menu-top {
+  width: 100%;
+  max-width: 1240px;
+  box-sizing: border-box;
+  padding: 62px 20px 72px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  column-gap: min(40px, 3.3333333333vw);
+}
+@media screen and (max-width: 1240px) {
+  .footer__menu-top {
+    grid-template-columns: repeat(4, 21.3vw);
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer__menu-top {
+    grid-template-columns: repeat(1, 270px);
+    row-gap: 30px;
+  }
+}
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer__title {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 800px) {
+  .footer__title {
+    margin-bottom: 16px;
+  }
+}
+.footer__link {
+  color: var(--gray);
+  text-decoration: none;
+}
+.footer__link_place_bottom {
+  margin-right: 16px;
+}
+@media screen and (max-width: 800px) {
+  .footer__link_place_bottom {
+    margin-bottom: 16px;
+  }
+}
+.footer__logo {
+  margin-right: 24px;
+}
+.footer__line {
+  color: var(--dark-gray);
+  size: 1px;
+}
+.footer__menu-bottom {
+  width: 100%;
+  max-width: 1240px;
+  padding: 40px 20px 49px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+@media screen and (max-width: 800px) {
+  .footer__menu-bottom {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
