@@ -67,28 +67,29 @@
   }
 
   &__form {
+    width: 20vw;
+    max-width: 248px;
     margin: auto 0 auto auto;
     display: flex;
     @media screen and (max-width: $mobile-width) {
       margin: 0;
+      width: calc(100vw - 40px);
+      max-width: 378px;
     }
   }
 
   &__input {
     @extend %indent-none;
-    width: 248px;
     height: 25px;
     border-radius: 25px;
     border: 0px;
+    width: 100%;
     background-color: var(--dark);
     box-sizing: border-box;
     &::placeholder {
       padding: 5px 0 5px 10px;
       color: #757575;
       text-transform: uppercase;
-    }
-    @media screen and (max-width: $mobile-width) {
-      width: 374px;
     }
   }
 }
