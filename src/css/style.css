@@ -313,7 +313,12 @@ h3 {
 .artist__title {
   width: 100%;
   text-align: start;
-  margin-top: 25px;
+  margin-top: 50px;
+}
+@media screen and (max-width: 800px) {
+  .artist__title {
+    margin-top: 25px;
+  }
 }
 .artist__description {
   margin: 16px 0 48px;
@@ -372,7 +377,7 @@ h3 {
 .pricing-forms__one-form {
   width: 368.5px;
   border-radius: 15px;
-  margin: 45px 0 43px;
+  margin: 45px 0 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -380,9 +385,6 @@ h3 {
   background-size: cover;
   padding: 24px 27px 64px 22px;
   box-sizing: border-box;
-}
-.pricing-forms__one-form:first-of-type {
-  margin-top: 45px;
 }
 .pricing-forms__one-form_type_free {
   background-image: url(../images/subscribe_1.png);
@@ -604,8 +606,7 @@ h3 {
 .footer__link {
   color: var(--gray);
   text-decoration: none;
-  width: auto;
-  margin-right: auto;
+  width: 100%;
 }
 .footer__link_place_bottom {
   margin-right: 16px;
@@ -633,7 +634,7 @@ h3 {
   .footer__menu-bottom {
     display: flex;
     flex-direction: column;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
     gap: 16px;
   }
 }

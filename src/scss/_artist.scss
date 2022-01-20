@@ -18,7 +18,10 @@
   &__title {
     width: 100%;
     text-align: start;
-    margin-top: 25px;
+    margin-top: 50px;
+    @media screen and (max-width: $mobile-width) {
+      margin-top: 25px;
+    }
   }
   &__description {
     @extend %text-size-1;

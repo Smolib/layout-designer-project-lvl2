@@ -31,8 +31,7 @@
     @extend %text-size-1;
     color: var(--gray);
     text-decoration: none;
-    width: auto;
-    margin-right: auto;
+    width: 100%;
     &_place {
       &_bottom {
         margin-right: 16px;
@@ -66,7 +65,7 @@
     @media screen and (max-width: $mobile-width) {
       display: flex;
       flex-direction: column;
-      padding-bottom: 30px;
+      padding-bottom: 35px;
       gap: 16px;
     }
   }

@@ -13,7 +13,7 @@
   &__one-form {
     width: 368.5px;
     border-radius: 15px;
-    margin:45px 0 43px;
+    margin:45px 0 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,9 +21,6 @@
     background-size: cover;
     padding: 24px 27px 64px 22px;
     box-sizing: border-box;
-    &:first-of-type {
-      margin-top: 45px;
-    }
     &_type {
       &_free {
         background-image: url(../images/subscribe_1.png);
