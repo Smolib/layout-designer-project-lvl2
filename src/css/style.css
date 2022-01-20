@@ -313,7 +313,7 @@ h3 {
 .artist__title {
   width: 100%;
   text-align: start;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 .artist__description {
   margin: 16px 0 48px;
@@ -429,7 +429,7 @@ h3 {
   background-color: transparent;
   color: var(--white);
   border-radius: 3px;
-  padding: 16px 30px;
+  padding: 20px 30px;
   border: 2px solid var(--white);
   text-transform: uppercase;
   cursor: pointer;
@@ -561,7 +561,7 @@ h3 {
 .app__button {
   background-color: var(--red);
   color: var(--white);
-  border-radius: 25px;
+  border-radius: 32px;
   border: 0;
   padding: 16px 40px;
 }
@@ -610,11 +610,6 @@ h3 {
 .footer__link_place_bottom {
   margin-right: 16px;
 }
-@media screen and (max-width: 800px) {
-  .footer__link_place_bottom {
-    margin-bottom: 16px;
-  }
-}
 .footer__list {
   display: flex;
   list-style: none;
@@ -638,7 +633,8 @@ h3 {
   .footer__menu-bottom {
     display: flex;
     flex-direction: column;
-    padding-bottom: 39px;
+    padding-bottom: 30px;
+    gap: 16px;
   }
 }
 

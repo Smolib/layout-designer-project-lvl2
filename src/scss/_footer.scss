@@ -36,9 +36,6 @@
     &_place {
       &_bottom {
         margin-right: 16px;
-        @media screen and (max-width: $mobile-width) {
-          margin-bottom: 16px;
-        }
       }
     }
   }
@@ -69,7 +66,8 @@
     @media screen and (max-width: $mobile-width) {
       display: flex;
       flex-direction: column;
-      padding-bottom: 39px;
+      padding-bottom: 30px;
+      gap: 16px;
     }
   }
 }
