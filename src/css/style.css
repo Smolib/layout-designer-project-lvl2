@@ -227,6 +227,7 @@ h3 {
     max-height: 853px;
     height: 853px;
     box-sizing: border-box;
+    padding: 200px 20px;
   }
 }
 .subscription__description {
@@ -239,8 +240,11 @@ h3 {
     margin: 16px 0;
   }
 }
+.subscription__form {
+  max-width: 570px;
+}
 .subscription__input-text {
-  width: 273px;
+  width: 270px;
   box-sizing: border-box;
   height: 50px;
   background-color: transparent;
@@ -300,7 +304,7 @@ h3 {
   .artist {
     max-height: 730px;
     height: 730px;
-    padding: 0 20px;
+    padding: 200px 20px;
   }
 }
 .artist__title {
@@ -339,6 +343,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  font-size: 12.8px;
 }
 .artist__button-img {
   width: 20px;

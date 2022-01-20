@@ -14,6 +14,7 @@
     max-height: 853px;
     height: 853px;
     box-sizing: border-box;
+    padding: 200px 20px;
   }
   &__description {
     @extend %text-size-1;
@@ -24,8 +25,11 @@
       margin: 16px 0;
     }
   }
+  &__form {
+    max-width: 570px;
+  }
   &__input-text {
-    width: 273px;
+    width: 270px;
     box-sizing: border-box;
     height: 50px;
     background-color: transparent;
