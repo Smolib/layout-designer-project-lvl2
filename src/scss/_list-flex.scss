@@ -28,18 +28,20 @@ padding-top: 100px;
     font-size: 18px;
     text-transform: none;
     margin-top: 18px;
+    &_section {
+      &_similar {
+        width: 100%;
+        text-align: center;
+      }
+    }
   }
   &__text {
     @extend %text-size-1;
     &_section {
       &_similar {
+        width: 100%;
         text-align: center;
       }
-    }
-  }
-  &_section {
-    &_similar {
-      padding-bottom: 100px;
     }
   }
 }

@@ -14,16 +14,19 @@
 .list-flex__text, .footer__link, .app__text, .news__news-text, .pricing-forms__description, .pricing-forms__button, .artist__description, .subscription__description {
   font-size: 16px;
   line-height: 1.5;
+  width: 100%;
 }
 
 .pricing-forms__price-currency {
   font-size: 32px;
   line-height: 1.5;
+  width: 100%;
 }
 
 .pricing-forms__price-value {
   font-size: 64px;
   line-height: 1.5;
+  width: 100%;
 }
 
 .header__nav-link, .header__logo-text {
@@ -297,8 +300,14 @@ h3 {
     padding: 225px 20px 224px;
   }
 }
+.artist__title {
+  width: 100%;
+  text-align: start;
+}
 .artist__description {
   margin: 16px 0 48px;
+  width: 100%;
+  text-align: start;
 }
 .artist__button {
   width: 200px;
@@ -307,7 +316,7 @@ h3 {
   border: 0;
   text-transform: uppercase;
   color: var(--white);
-  padding: 0;
+  padding-left: 31px;
   margin-right: 19px;
   margin-bottom: 24px;
   cursor: pointer;
@@ -330,7 +339,6 @@ h3 {
 }
 .artist__button-img {
   width: 20px;
-  padding-left: 31px;
   padding-right: 16px;
 }
 
@@ -684,11 +692,13 @@ h3 {
   text-transform: none;
   margin-top: 18px;
 }
-.list-flex__text_section_similar {
+.list-flex__name_section_similar {
+  width: 100%;
   text-align: center;
 }
-.list-flex_section_similar {
-  padding-bottom: 100px;
+.list-flex__text_section_similar {
+  width: 100%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
