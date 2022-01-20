@@ -575,7 +575,7 @@ h3 {
 .footer__block {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
 }
 .footer__title {
   font-size: 18px;

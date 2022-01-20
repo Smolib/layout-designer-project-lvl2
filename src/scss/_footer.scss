@@ -17,7 +17,7 @@
   &__block {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
   }
   &__title {
     font-size: 18px;
@@ -30,6 +30,7 @@
     @extend %text-size-1;
     color: var(--gray);
     text-decoration: none;
+    width: auto;
     &_place {
       &_bottom {
         margin-right: 16px;
