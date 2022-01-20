@@ -19,6 +19,7 @@
     @extend %text-size-1;
     margin: 31px 0 17px;
     text-align: center;
+    max-width: 1280px;
     @media screen and (max-width: $mobile-width) {
       margin: 16px 0;
     }

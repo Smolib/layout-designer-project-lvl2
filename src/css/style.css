@@ -78,6 +78,7 @@ h1 {
   font-weight: bold;
   color: var(--white);
   text-align: center;
+  width: 100%;
   font-size: 60px;
 }
 @media screen and (max-width: 800px) {
@@ -91,6 +92,7 @@ h2 {
   font-weight: bold;
   color: var(--white);
   text-align: center;
+  width: 100%;
   font-size: 38px;
 }
 @media screen and (max-width: 800px) {
@@ -104,6 +106,7 @@ h3 {
   font-weight: bold;
   color: var(--white);
   text-align: center;
+  width: 100%;
   font-size: 24px;
   text-align: left;
 }
@@ -158,6 +161,7 @@ h3 {
 @media screen and (max-width: 800px) {
   .header__nav-item {
     padding-bottom: 3px;
+    margin-right: auto;
   }
 }
 .header__nav-item:last-of-type {
@@ -229,6 +233,7 @@ h3 {
 .subscription__description {
   margin: 31px 0 17px;
   text-align: center;
+  max-width: 1280px;
 }
 @media screen and (max-width: 800px) {
   .subscription__description {
@@ -589,6 +594,8 @@ h3 {
 .footer__link {
   color: var(--gray);
   text-decoration: none;
+  width: auto;
+  margin-right: auto;
 }
 .footer__link_place_bottom {
   margin-right: 16px;
