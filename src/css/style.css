@@ -375,7 +375,6 @@ h3 {
   width: 100%;
 }
 .pricing-forms__one-form {
-  width: 368.5px;
   height: 600px;
   border-radius: 15px;
   margin: 45px 0 50px;
@@ -389,18 +388,22 @@ h3 {
 }
 .pricing-forms__one-form_type_free {
   background-image: url(../images/subscribe_1.png);
+  width: 368.2px;
 }
 .pricing-forms__one-form_type_standart {
   background-image: url(../images/subscribe_2.png);
+  width: 369.2px;
 }
 .pricing-forms__one-form_type_premium {
   background-image: url(../images/subscribe_3.png);
+  width: 368.8px;
 }
 @media screen and (max-width: 800px) {
   .pricing-forms__one-form {
     padding-top: 19px;
     margin-top: 0;
-    height: 600px;
+    height: 586px;
+    width: 374px;
   }
   .pricing-forms__one-form:first-of-type {
     margin-top: 45px;
@@ -629,14 +632,15 @@ h3 {
   size: 1px;
 }
 .footer__menu-bottom {
-  padding: 2rem 20px 2rem;
+  padding: 40px 20px 49px;
 }
 @media screen and (max-width: 800px) {
   .footer__menu-bottom {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding-right: 30px;
+    padding-right: 25px;
+    padding-bottom: 35px;
   }
 }
 

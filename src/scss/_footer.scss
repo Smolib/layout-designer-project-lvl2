@@ -60,12 +60,13 @@
   }
   &__menu-bottom {
     @extend %section-size;
-    padding: 2rem 20px 2rem;
+    padding: 40px 20px 49px;
     @media screen and (max-width: $mobile-width) {
       display: flex;
       flex-direction: column;
       gap: 16px;
-      padding-right: 30px;
+      padding-right: 25px;
+      padding-bottom: 35px;
     }
   }
 }
