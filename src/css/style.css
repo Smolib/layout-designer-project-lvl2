@@ -14,19 +14,16 @@
 .list-flex__text, .footer__link, .app__text, .news__news-text, .pricing-forms__description, .pricing-forms__button, .artist__description, .subscription__description {
   font-size: 16px;
   line-height: 1.5;
-  width: 100%;
 }
 
 .pricing-forms__price-currency {
   font-size: 32px;
   line-height: 1.5;
-  width: 100%;
 }
 
 .pricing-forms__price-value {
   font-size: 64px;
   line-height: 1.5;
-  width: 100%;
 }
 
 .header__nav-link, .header__logo-text {
@@ -81,7 +78,6 @@ h1 {
   width: 100%;
   max-width: 1200px;
   font-size: 60px;
-  margin: 0 20px;
 }
 @media screen and (max-width: 800px) {
   h1 {
@@ -97,7 +93,6 @@ h2 {
   width: 100%;
   max-width: 1200px;
   font-size: 38px;
-  margin: 0 20px;
 }
 @media screen and (max-width: 800px) {
   h2 {
@@ -375,8 +370,7 @@ h3 {
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 24px;
-  padding-bottom: 64px;
+  padding: 24px 27px 64px 22px;
   box-sizing: border-box;
 }
 .pricing-forms__one-form:first-of-type {
@@ -409,7 +403,9 @@ h3 {
 .pricing-forms__price {
   margin: 200px 0 40px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 .pricing-forms__price-value {
   margin-right: 16px;
@@ -420,9 +416,8 @@ h3 {
 }
 .pricing-forms__form-description {
   text-align: center;
-  padding-top: 64px;
+  margin-top: 64px;
   font-size: 12.8px;
-  margin: 0 29px 0 22px;
 }
 .pricing-forms__button {
   background-color: transparent;
@@ -436,7 +431,6 @@ h3 {
 }
 .pricing-forms__description {
   width: 100%;
-  margin: 0 20px;
   text-align: center;
 }
 
