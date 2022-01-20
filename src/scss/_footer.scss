@@ -10,7 +10,7 @@
       grid-template-columns: repeat(4, 21.3vw);
     }
     @media screen and (max-width: $mobile-width) {
-      grid-template-columns: repeat(1, 270px);
+      grid-template-columns: repeat(1, auto);
       row-gap: 30px;
     }
   }
