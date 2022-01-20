@@ -22,6 +22,7 @@
   &__title {
     font-size: 18px;
     margin-bottom: 15px;
+    text-align: start;
     @media screen and (max-width: $mobile-width) {
       margin-bottom: 16px;
     }
@@ -46,14 +47,16 @@
     display: flex;
     list-style: none;
     flex-direction: column;
+    &_direction {
+      &_row {
+        flex-direction: row;
+        gap: 24px;
+      }
+    }
   }
 
   &__list-item {
     list-style: none;
-  }
-
-  &__logo {
-    margin-right: 24px;
   }
   &__line {
     color: var(--dark-gray);
@@ -66,6 +69,7 @@
     @media screen and (max-width: $mobile-width) {
       display: flex;
       flex-direction: column;
+      padding-bottom: 39px;
     }
   }
 }
