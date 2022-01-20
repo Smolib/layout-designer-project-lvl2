@@ -272,7 +272,7 @@ h3 {
 }
 .subscription__button {
   display: block;
-  width: 567px;
+  width: 570px;
   height: 57px;
   border-radius: 5px;
   border: 0;
@@ -319,6 +319,7 @@ h3 {
 .artist__button {
   width: 200px;
   height: 62px;
+  font-size: 12.8px;
   border-radius: 5px;
   border: 0;
   text-transform: uppercase;
