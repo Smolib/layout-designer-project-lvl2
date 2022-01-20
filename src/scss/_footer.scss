@@ -12,6 +12,7 @@
     @media screen and (max-width: $mobile-width) {
       grid-template-columns: repeat(1, auto);
       row-gap: 30px;
+      padding-bottom: 67px;
     }
   }
   &__block {
@@ -66,7 +67,7 @@
       flex-direction: column;
       gap: 16px;
       padding-right: 25px;
-      padding-bottom: 35px;
+      padding-bottom: 43px;
     }
   }
 }

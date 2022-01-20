@@ -377,7 +377,7 @@ h3 {
 .pricing-forms__one-form {
   height: 600px;
   border-radius: 15px;
-  margin: 45px 0 50px;
+  margin: 42px 0 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -402,11 +402,11 @@ h3 {
   .pricing-forms__one-form {
     padding-top: 19px;
     margin-top: 0;
-    height: 586px;
+    height: 592px;
     width: 374px;
   }
   .pricing-forms__one-form:first-of-type {
-    margin-top: 45px;
+    margin-top: 43px;
     margin-right: 0px;
   }
 }
@@ -591,6 +591,7 @@ h3 {
   .footer__menu-top {
     grid-template-columns: repeat(1, auto);
     row-gap: 30px;
+    padding-bottom: 67px;
   }
 }
 .footer__block {
@@ -640,7 +641,7 @@ h3 {
     flex-direction: column;
     gap: 16px;
     padding-right: 25px;
-    padding-bottom: 35px;
+    padding-bottom: 43px;
   }
 }
 
