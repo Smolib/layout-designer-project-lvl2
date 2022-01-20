@@ -364,7 +364,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 101px;
+  padding-top: 100px;
 }
 @media screen and (max-width: 1240px) {
   .pricing-forms {
@@ -431,6 +431,11 @@ h3 {
   text-align: center;
   margin-top: 64px;
   font-size: 12.8px;
+}
+@media screen and (max-width: 800px) {
+  .pricing-forms__form-description {
+    margin-top: 66px;
+  }
 }
 .pricing-forms__button {
   background-color: transparent;
