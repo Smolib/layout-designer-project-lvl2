@@ -41,6 +41,17 @@
       }
     }
   }
+  &__list {
+    @extend %indent-none;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+  }
+
+  &__list-item {
+    list-style: none;
+  }
+
   &__logo {
     margin-right: 24px;
   }
