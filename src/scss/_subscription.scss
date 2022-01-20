@@ -1,6 +1,6 @@
 .subscription {
-  height: calc(100vw / 1.92);
   max-height: 750px;
+  padding: 200px 0;
   min-height: 550px;
   margin: auto;
   display: flex;
@@ -13,7 +13,6 @@
   @media screen and (max-width: $mobile-width) {
     max-height: 853px;
     height: 853px;
-    padding: 200px 0 201px;
     box-sizing: border-box;
   }
   &__description {
