@@ -12,6 +12,7 @@
   }
   &__one-form {
     width: 368.5px;
+    height: 600px;
     border-radius: 15px;
     margin:45px 0 50px;
     display: flex;
@@ -35,6 +36,7 @@
     @media screen and (max-width: $mobile-width) {
       padding-top: 19px;
       margin-top: 0;
+      height: 600px;
       &:first-of-type {
         margin-top: 45px;
         margin-right: 0px;

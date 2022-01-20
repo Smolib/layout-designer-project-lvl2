@@ -376,6 +376,7 @@ h3 {
 }
 .pricing-forms__one-form {
   width: 368.5px;
+  height: 600px;
   border-radius: 15px;
   margin: 45px 0 50px;
   display: flex;
@@ -399,6 +400,7 @@ h3 {
   .pricing-forms__one-form {
     padding-top: 19px;
     margin-top: 0;
+    height: 600px;
   }
   .pricing-forms__one-form:first-of-type {
     margin-top: 45px;
@@ -606,7 +608,6 @@ h3 {
 .footer__link {
   color: var(--gray);
   text-decoration: none;
-  width: 100%;
 }
 .footer__link_place_bottom {
   margin-right: 16px;
@@ -628,14 +629,14 @@ h3 {
   size: 1px;
 }
 .footer__menu-bottom {
-  padding: 40px 20px 49px;
+  padding: 2rem 20px 2rem;
 }
 @media screen and (max-width: 800px) {
   .footer__menu-bottom {
     display: flex;
     flex-direction: column;
-    padding-bottom: 35px;
     gap: 16px;
+    padding-right: 30px;
   }
 }
 

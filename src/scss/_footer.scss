@@ -31,7 +31,6 @@
     @extend %text-size-1;
     color: var(--gray);
     text-decoration: none;
-    width: 100%;
     &_place {
       &_bottom {
         margin-right: 16px;
@@ -61,12 +60,12 @@
   }
   &__menu-bottom {
     @extend %section-size;
-    padding: 40px 20px 49px;
+    padding: 2rem 20px 2rem;
     @media screen and (max-width: $mobile-width) {
       display: flex;
       flex-direction: column;
-      padding-bottom: 35px;
       gap: 16px;
+      padding-right: 30px;
     }
   }
 }
