@@ -14,7 +14,7 @@
   @media screen and (max-width: $mobile-width) {
     max-height: 730px;
     height: 730px;
-    padding: 225px 20px 224px;
+    padding: 200px 20px 224px;
   }
   &__title {
     width: 100%;
@@ -33,7 +33,7 @@
     border: 0;
     text-transform: uppercase;
     color: var(--white);
-    padding-left: 31px;
+    padding: 20px 30px;
     margin-right: 19px;
     margin-bottom: 24px;
     cursor: pointer;

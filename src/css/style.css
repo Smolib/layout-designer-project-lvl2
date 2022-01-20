@@ -72,7 +72,7 @@ body {
 h1 {
   text-transform: uppercase;
   line-height: 1.5;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--white);
   text-align: center;
   width: 100%;
@@ -87,7 +87,7 @@ h1 {
 h2 {
   text-transform: uppercase;
   line-height: 1.5;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--white);
   text-align: center;
   width: 100%;
@@ -102,7 +102,7 @@ h2 {
 h3 {
   text-transform: uppercase;
   line-height: 1.5;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--white);
   text-align: center;
   width: 100%;
@@ -226,7 +226,7 @@ h3 {
   .subscription {
     max-height: 853px;
     height: 853px;
-    padding: 250px 0 201px;
+    padding: 200px 0 201px;
     box-sizing: border-box;
   }
 }
@@ -269,7 +269,7 @@ h3 {
 }
 .subscription__button {
   display: block;
-  width: 570px;
+  width: 567px;
   height: 57px;
   border-radius: 5px;
   border: 0;
@@ -302,7 +302,7 @@ h3 {
   .artist {
     max-height: 730px;
     height: 730px;
-    padding: 225px 20px 224px;
+    padding: 200px 20px 224px;
   }
 }
 .artist__title {
@@ -321,7 +321,7 @@ h3 {
   border: 0;
   text-transform: uppercase;
   color: var(--white);
-  padding-left: 31px;
+  padding: 20px 30px;
   margin-right: 19px;
   margin-bottom: 24px;
   cursor: pointer;
@@ -394,6 +394,9 @@ h3 {
     margin-top: 45px;
     margin-right: 0px;
   }
+}
+.pricing-forms__title-price {
+  font-weight: 400;
 }
 .pricing-forms__price {
   margin: 200px 0 40px;
@@ -480,6 +483,7 @@ h3 {
   text-transform: capitalize;
   font-size: 30px;
   line-height: 1.5;
+  font-weight: 400;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 800px) {
@@ -701,8 +705,9 @@ h3 {
 }
 .list-flex__name {
   font-size: 18px;
-  text-transform: none;
+  text-transform: capitalize;
   margin-top: 18px;
+  text-align: start;
 }
 .list-flex__name_section_similar {
   width: 100%;

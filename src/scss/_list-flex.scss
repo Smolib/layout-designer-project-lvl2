@@ -26,8 +26,9 @@ padding-top: 100px;
   }
   &__name {
     font-size: 18px;
-    text-transform: none;
+    text-transform: capitalize;
     margin-top: 18px;
+    text-align: start;
     &_section {
       &_similar {
         width: 100%;
