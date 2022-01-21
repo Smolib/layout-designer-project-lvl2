@@ -1,11 +1,45 @@
-@import "_variables";
-@import "_general";
-@import "_header";
-@import "_subscription";
-@import "_artist";
-@import "_pricing-forms";
-@import "_news";
-@import "_app";
-@import "_footer";
-@import "_popular-track";
-@import "_list-flex";
+.app {
+  @extend %section-size;
+  max-width: 1240px;
+  padding: 100px 20px 0;
+
+  &__block {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin: 48px auto 0;
+
+    @media screen and (max-width: $mobile-width) {
+      flex-direction: column;
+      align-items: center;
+      margin: 48px 0 0;
+    }
+  }
+
+  &__text-block {
+    max-width: 600px;
+    margin-top: 16px;
+    margin-right: min(144px, 10vw);
+    @media screen and (max-width: $mobile-width) {
+      margin-right: 0;
+    }
+  }
+
+  &__text {
+    @extend %text-size-1;
+    @extend %indent-none;
+    margin-bottom: 16px;
+  }
+
+  &__button {
+    @extend %btn;
+    color: var(--white);
+    background-color: var(--red);
+
+    border: 0;
+    border-radius: 32px;
+
+    padding: 16px 40px;
+  }
+}

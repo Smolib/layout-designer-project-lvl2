@@ -1,64 +1,84 @@
 .artist {
-  max-height: 713px;
-  min-height: 550px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  background-image: url(../images/Morten\ Harket.png);
+
+  box-sizing: border-box;
+  min-height: 550px;
+  max-height: 713px;
+  padding: 200px 120px;
+
+  background-image: url('../images/Morten\ Harket.png');
   background-position: center;
   background-size: cover;
-  padding: 200px 120px;
-  box-sizing: border-box;
+
   @media screen and (max-width: $mobile-width) {
-    max-height: 730px;
     height: 730px;
+    max-height: 730px;
     padding: 200px 20px;
   }
+
   &__title {
     width: 100%;
-    text-align: start;
     margin-top: 50px;
+
+    text-align: start;
+
     @media screen and (max-width: $mobile-width) {
       margin-top: 25px;
     }
   }
+
   &__description {
     @extend %text-size-1;
-    margin: 16px 0 48px;
     width: 100%;
+    margin: 16px 0 48px;
+
     text-align: start;
   }
+
   &__button {
     width: 200px;
     height: 62px;
-    font-size: 12.8px;
-    border-radius: 5px;
-    border: 0;
-    text-transform: uppercase;
-    color: var(--white);
-    padding: 20px 30px;
     margin-right: 19px;
     margin-bottom: 24px;
+    padding: 20px 30px;
+
+    font-size: 12.8px;
+
+    border: 0;
+    border-radius: 5px;
+
+    color: var(--white);
+    text-transform: uppercase;
+
     cursor: pointer;
+
     &_color {
+
       &_purple {
         background-color: var(--purple);
       }
+
       &_red {
         background-color: var(--red);
       }
     }
+
     @media screen and (max-width: $mobile-width) {
       display: block;
     }
   }
+
   &__button-inside {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+
     font-size: 12.8px;
   }
+
   &__button-img {
     width: 20px;
     padding-right: 16px;

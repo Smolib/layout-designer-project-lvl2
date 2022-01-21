@@ -41,42 +41,41 @@
   height: 53px;
   font-size: 12.8px;
   line-height: 19.2px;
-  cursor: pointer;
   text-align: center;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .list-flex, .popular-track, .footer__menu-bottom, .footer__menu-top, .app, .news, .pricing-forms, .header {
-  max-width: 1240px;
   box-sizing: border-box;
+  max-width: 1240px;
   width: 100%;
   margin: auto;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: Roboto;
   src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 body {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  position: relative;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: var(--white);
   font-size: 11px;
   line-height: 1.5;
-  color: var(--dark-gray);
   background-color: var(--black);
-  position: relative;
-  color: var(--white);
 }
 
 h1 {
-  text-transform: uppercase;
-  line-height: 1.5;
-  font-weight: 700;
-  color: var(--white);
-  text-align: center;
   width: 100%;
   max-width: 1200px;
+  color: var(--white);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5;
+  text-transform: uppercase;
   font-size: 60px;
 }
 @media screen and (max-width: 800px) {
@@ -85,13 +84,13 @@ h1 {
   }
 }
 h2 {
-  text-transform: uppercase;
-  line-height: 1.5;
-  font-weight: 700;
-  color: var(--white);
-  text-align: center;
   width: 100%;
   max-width: 1200px;
+  color: var(--white);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5;
+  text-transform: uppercase;
   font-size: 38px;
 }
 @media screen and (max-width: 800px) {
@@ -100,13 +99,13 @@ h2 {
   }
 }
 h3 {
-  text-transform: uppercase;
-  line-height: 1.5;
-  font-weight: 700;
-  color: var(--white);
-  text-align: center;
   width: 100%;
   max-width: 1200px;
+  color: var(--white);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5;
+  text-transform: uppercase;
   font-size: 24px;
 }
 @media screen and (max-width: 800px) {
@@ -117,10 +116,10 @@ h3 {
 
 .header {
   position: absolute;
-  display: flex;
   top: 25px;
-  left: 0;
   right: 0;
+  left: 0;
+  display: flex;
   align-items: center;
 }
 @media screen and (max-width: 800px) {
@@ -139,8 +138,8 @@ h3 {
 }
 .header__logo-text {
   margin: 0 90px 0 16px;
-  text-transform: uppercase;
   color: var(--white);
+  text-transform: uppercase;
 }
 .header__nav-list {
   display: flex;
@@ -153,23 +152,22 @@ h3 {
   }
 }
 .header__nav-item {
-  list-style: none;
-  padding-right: 24px;
   display: flex;
+  padding-right: 24px;
+  list-style: none;
 }
 @media screen and (max-width: 800px) {
   .header__nav-item {
     padding-bottom: 3px;
-    margin-right: a;
   }
 }
 .header__nav-item:last-of-type {
   padding: 0;
 }
 .header__nav-link {
+  color: var(--dark-gray);
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--dark-gray);
 }
 .header__nav-link_selected {
   color: var(--white);
@@ -183,25 +181,25 @@ h3 {
   }
 }
 .header__form {
+  display: flex;
   width: 20vw;
   max-width: 248px;
   margin: auto 0 auto auto;
-  display: flex;
 }
 @media screen and (max-width: 800px) {
   .header__form {
-    margin: 0;
     width: calc(100vw - 40px);
     max-width: 378px;
+    margin: 0;
   }
 }
 .header__input {
-  height: 25px;
-  border-radius: 25px;
-  border: 0px;
   width: 100%;
-  background-color: var(--dark);
+  height: 25px;
   box-sizing: border-box;
+  border: 0px;
+  border-radius: 25px;
+  background-color: var(--dark);
 }
 .header__input::placeholder {
   padding: 5px 0 5px 10px;
@@ -210,21 +208,21 @@ h3 {
 }
 
 .subscription {
-  max-height: 750px;
-  padding: 200px 0;
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../images/banner.png);
+  max-height: 750px;
+  margin: auto;
+  padding: 200px 0;
+  background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
 }
 @media screen and (max-width: 800px) {
   .subscription {
+    box-sizing: border-box;
     max-height: 853px;
     height: 853px;
-    box-sizing: border-box;
     padding: 200px 20px;
   }
 }
@@ -234,9 +232,9 @@ h3 {
   }
 }
 .subscription__description {
+  max-width: 1200px;
   margin: 31px 0 17px;
   text-align: center;
-  max-width: 1200px;
 }
 @media screen and (max-width: 800px) {
   .subscription__description {
@@ -247,13 +245,13 @@ h3 {
   max-width: 570px;
 }
 .subscription__input-text {
-  width: 270px;
   box-sizing: border-box;
+  width: 270px;
   height: 50px;
-  background-color: transparent;
-  border-radius: 3px;
-  border: 2px solid var(--dark-gray);
   margin-bottom: 24px;
+  border: 2px solid var(--dark-gray);
+  border-radius: 3px;
+  background-color: transparent;
 }
 .subscription__input-text:first-of-type {
   margin-right: 24px;
@@ -269,20 +267,20 @@ h3 {
 }
 @media screen and (max-width: 800px) {
   .subscription__input-text {
-    width: 374px;
     display: block;
+    width: 374px;
   }
 }
 .subscription__button {
   display: block;
   width: 570px;
   height: 57px;
-  border-radius: 5px;
   border: 0;
+  border-radius: 5px;
+  color: var(--white);
+  text-transform: uppercase;
   background-color: var(--green);
   cursor: pointer;
-  text-transform: uppercase;
-  color: var(--white);
 }
 @media screen and (max-width: 800px) {
   .subscription__button {
@@ -291,29 +289,29 @@ h3 {
 }
 
 .artist {
-  max-height: 713px;
-  min-height: 550px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  background-image: url(../images/Morten\ Harket.png);
+  box-sizing: border-box;
+  min-height: 550px;
+  max-height: 713px;
+  padding: 200px 120px;
+  background-image: url("../images/Morten Harket.png");
   background-position: center;
   background-size: cover;
-  padding: 200px 120px;
-  box-sizing: border-box;
 }
 @media screen and (max-width: 800px) {
   .artist {
-    max-height: 730px;
     height: 730px;
+    max-height: 730px;
     padding: 200px 20px;
   }
 }
 .artist__title {
   width: 100%;
-  text-align: start;
   margin-top: 50px;
+  text-align: start;
 }
 @media screen and (max-width: 800px) {
   .artist__title {
@@ -321,21 +319,21 @@ h3 {
   }
 }
 .artist__description {
-  margin: 16px 0 48px;
   width: 100%;
+  margin: 16px 0 48px;
   text-align: start;
 }
 .artist__button {
   width: 200px;
   height: 62px;
-  font-size: 12.8px;
-  border-radius: 5px;
-  border: 0;
-  text-transform: uppercase;
-  color: var(--white);
-  padding: 20px 30px;
   margin-right: 19px;
   margin-bottom: 24px;
+  padding: 20px 30px;
+  font-size: 12.8px;
+  border: 0;
+  border-radius: 5px;
+  color: var(--white);
+  text-transform: uppercase;
   cursor: pointer;
 }
 .artist__button_color_purple {
@@ -375,16 +373,16 @@ h3 {
   width: 100%;
 }
 .pricing-forms__one-form {
-  height: 600px;
-  border-radius: 15px;
-  margin: 47px 0 55px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+  height: 600px;
+  margin: 47px 0 55px;
+  padding: 24px 27px 64px 22px;
+  border-radius: 15px;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 24px 27px 64px 22px;
-  box-sizing: border-box;
 }
 .pricing-forms__one-form_type_free {
   background-image: url(../images/subscribe_1.png);
@@ -400,10 +398,10 @@ h3 {
 }
 @media screen and (max-width: 800px) {
   .pricing-forms__one-form {
-    padding-top: 19px;
-    margin-top: 0;
-    height: 592px;
     width: 374px;
+    height: 592px;
+    margin-top: 0;
+    padding-top: 19px;
   }
   .pricing-forms__one-form:first-of-type {
     margin-top: 43px;
@@ -414,11 +412,11 @@ h3 {
   font-weight: 400;
 }
 .pricing-forms__price {
-  margin: 200px 0 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin: 200px 0 40px;
 }
 .pricing-forms__price-value {
   margin-right: 16px;
@@ -428,8 +426,8 @@ h3 {
   text-transform: uppercase;
 }
 .pricing-forms__form-description {
-  text-align: center;
   margin-top: 64px;
+  text-align: center;
   font-size: 12.8px;
 }
 @media screen and (max-width: 800px) {
@@ -438,15 +436,15 @@ h3 {
   }
 }
 .pricing-forms__button {
-  background-color: transparent;
-  color: var(--white);
-  border-radius: 3px;
-  padding: 20px 30px;
-  border: 2px solid var(--white);
-  text-transform: uppercase;
-  cursor: pointer;
   width: 318px;
   height: 66px;
+  padding: 20px 30px;
+  border: 2px solid var(--white);
+  border-radius: 3px;
+  color: var(--white);
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
 }
 .pricing-forms__description {
   width: 100%;
@@ -485,15 +483,15 @@ h3 {
 }
 .news__image {
   width: 45vw;
-  max-width: 575px;
   min-width: 374px;
+  max-width: 575px;
 }
 .news__text-block {
   display: flex;
   flex-direction: column;
   width: 45vw;
-  max-width: 575px;
   min-width: 374px;
+  max-width: 575px;
 }
 @media screen and (max-width: 800px) {
   .news__text-block {
@@ -501,16 +499,16 @@ h3 {
   }
 }
 .news__news-title {
-  text-transform: capitalize;
-  font-size: 30px;
-  line-height: 1.5;
-  font-weight: 400;
   margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: capitalize;
 }
 @media screen and (max-width: 800px) {
   .news__news-title {
-    font-size: 16px;
     margin-bottom: 16px;
+    font-size: 16px;
   }
 }
 .news__news-text {
@@ -523,31 +521,31 @@ h3 {
   line-height: 19px;
 }
 .news__author {
-  text-decoration: none;
-  color: var(--orange);
   margin: 0 18px 0 16px;
+  color: var(--orange);
+  text-decoration: none;
   text-transform: uppercase;
 }
 .news__button {
+  width: 135px;
   margin-top: 48px;
+  padding: 16px 30px;
   color: var(--dark-gray);
   text-transform: uppercase;
   background-color: transparent;
-  border-radius: 5px;
   border: 2px solid var(--dark-gray);
-  width: 135px;
-  padding: 16px 30px;
+  border-radius: 5px;
 }
 
 .app {
-  padding: 100px 20px 0;
   max-width: 1240px;
+  padding: 100px 20px 0;
 }
 .app__block {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: flex-end;
   align-items: flex-start;
+  justify-content: flex-end;
   margin: 48px auto 0;
 }
 @media screen and (max-width: 800px) {
@@ -559,8 +557,8 @@ h3 {
 }
 .app__text-block {
   max-width: 600px;
-  margin-right: min(144px, 10vw);
   margin-top: 16px;
+  margin-right: min(144px, 10vw);
 }
 @media screen and (max-width: 800px) {
   .app__text-block {
@@ -571,10 +569,10 @@ h3 {
   margin-bottom: 16px;
 }
 .app__button {
-  background-color: var(--red);
   color: var(--white);
-  border-radius: 32px;
+  background-color: var(--red);
   border: 0;
+  border-radius: 32px;
   padding: 16px 40px;
 }
 
@@ -582,9 +580,9 @@ h3 {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 .footer__menu-top {
-  padding: 62px 20px 72px;
   display: grid;
   grid-template-columns: repeat(4, 270px);
+  padding: 62px 20px 72px;
   column-gap: min(40px, 3.3333333333vw);
 }
 @media screen and (max-width: 1240px) {
@@ -605,8 +603,8 @@ h3 {
   align-items: stretch;
 }
 .footer__title {
-  font-size: 18px;
   margin-bottom: 15px;
+  font-size: 18px;
   text-align: start;
 }
 @media screen and (max-width: 800px) {
@@ -623,8 +621,8 @@ h3 {
 }
 .footer__list {
   display: flex;
-  list-style: none;
   flex-direction: column;
+  list-style: none;
 }
 .footer__list_direction_row {
   flex-direction: row;
@@ -684,8 +682,8 @@ h3 {
   font-size: 12.8px;
 }
 .popular-track__artist {
-  font-size: 12.8px;
   color: var(--gray);
+  font-size: 12.8px;
 }
 .popular-track__time {
   margin-left: auto;
@@ -710,10 +708,10 @@ h3 {
   margin-top: 23px;
 }
 .list-flex__block {
-  margin-right: 50px;
-  margin-top: 25px;
-  width: clamp(137px, 20vw, 250px);
   display: flex;
+  width: clamp(137px, 20vw, 250px);
+  margin-top: 25px;
+  margin-right: 50px;
   flex-direction: column;
 }
 .list-flex__block_section_similar {
@@ -723,10 +721,10 @@ h3 {
   width: 100%;
 }
 .list-flex__name {
-  font-size: 18px;
-  text-transform: capitalize;
   margin-top: 18px;
   text-align: start;
+  font-size: 18px;
+  text-transform: capitalize;
 }
 .list-flex__name_section_similar {
   width: 100%;

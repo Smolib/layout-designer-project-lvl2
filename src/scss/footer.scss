@@ -1,49 +1,66 @@
 .footer {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+  
   &__menu-top {
     @extend %section-size;
-    padding: 62px 20px 72px;
     display: grid;
     grid-template-columns: repeat(4, 270px);
+
+    padding: 62px 20px 72px;
+
     column-gap: min(40px, 100vw / 30);
+
     @media screen and (max-width: 1240px) {
       grid-template-columns: repeat(4, 21.3vw);
     }
+
     @media screen and (max-width: $mobile-width) {
       grid-template-columns: repeat(1, auto);
       row-gap: 30px;
+
       padding-bottom: 67px;
     }
   }
+
   &__block {
     display: flex;
     flex-direction: column;
     align-items: stretch;
   }
+
   &__title {
-    font-size: 18px;
     margin-bottom: 15px;
+
+    font-size: 18px;
     text-align: start;
+
     @media screen and (max-width: $mobile-width) {
       margin-bottom: 16px;
     }
   }
+
   &__link {
     @extend %text-size-1;
     color: var(--gray);
     text-decoration: none;
+
     &_place {
+
       &_bottom {
         margin-right: 16px;
       }
     }
   }
+
   &__list {
     @extend %indent-none;
     display: flex;
-    list-style: none;
     flex-direction: column;
+
+    list-style: none;
+
     &_direction {
+
       &_row {
         flex-direction: row;
         gap: 24px;
@@ -54,14 +71,17 @@
   &__list-item {
     list-style: none;
   }
+
   &__line {
     color: var(--dark-gray);
     size: 1px;
     @extend %indent-none;
   }
+
   &__menu-bottom {
     @extend %section-size;
     padding: 40px 20px 49px;
+
     @media screen and (max-width: $mobile-width) {
       display: flex;
       flex-direction: column;

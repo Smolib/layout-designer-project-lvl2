@@ -1,46 +1,62 @@
 .list-flex {
-@extend %section-size;
-padding-top: 100px;
+  @extend %section-size;
+  padding-top: 100px;
+
   &__title {
     text-align: left;
   }
+
   &__flex {
     display: flex;
     flex-wrap: wrap;
     margin-top: 23px;
   }
+
   &__block {
-    margin-right: 50px;
-    margin-top: 25px;
-    width: clamp(137px, 20vw, 250px);
     display: flex;
+    width: clamp(137px, 20vw, 250px);
+    margin-top: 25px;
+    margin-right: 50px;
+
     flex-direction: column;
+
     &_section {
+
       &_similar {
         align-items: center;
       }
     }
   }
+
   &__image {
     width: 100%;
   }
+
   &__name {
+    margin-top: 18px;
+
+    text-align: start;
     font-size: 18px;
     text-transform: capitalize;
-    margin-top: 18px;
-    text-align: start;
+
     &_section {
+
       &_similar {
         width: 100%;
+
         text-align: center;
       }
     }
   }
+
   &__text {
     @extend %text-size-1;
+
     &_section {
+
       &_similar {
         width: 100%;
+
         text-align: center;
       }
     }

@@ -1,69 +1,90 @@
 .subscription {
-  max-height: 750px;
-  padding: 200px 0;
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../images/banner.png);
+  max-height: 750px;
+  margin: auto;
+  padding: 200px 0;
+  
+  background-image: url('../images/banner.png');
   background-position: center;
   background-size: cover;
+
   @media screen and (max-width: $mobile-width) {
+    box-sizing: border-box;
     max-height: 853px;
     height: 853px;
-    box-sizing: border-box;
     padding: 200px 20px;
   }
+
   &__title {
     @media screen and (max-width: $mobile-width) {
       margin: 50px 0 0;
     }
   }
+
   &__description {
     @extend %text-size-1;
-    margin: 31px 0 17px;
-    text-align: center;
     max-width: 1200px;
+    margin: 31px 0 17px;
+
+    text-align: center;
+
     @media screen and (max-width: $mobile-width) {
       margin: 16px 0;
     }
   }
+
   &__form {
     max-width: 570px;
   }
+
   &__input-text {
-    width: 270px;
     box-sizing: border-box;
+    width: 270px;
     height: 50px;
-    background-color: transparent;
-    border-radius: 3px;
-    border: 2px solid var(--dark-gray);
     margin-bottom: 24px;
+    
+    border: 2px solid var(--dark-gray);
+    border-radius: 3px;
+
+    background-color: transparent;
+
     &:first-of-type {
       margin-right: 24px;
+
       @media screen and (max-width: $mobile-width) {
         margin-right: 0;
       }
     }
+
     &::placeholder {
       padding: 15px 0 11px 20.24px;
+
       color: var(--white);
     }
+
     @media screen and (max-width: $mobile-width) {
-      width: 374px;
       display: block;
+      width: 374px;
     }
   }
+
   &__button {
     display: block;
     width: 570px;
     height: 57px;
-    border-radius: 5px;
+
     border: 0;
-    background-color: var(--green);
-    cursor: pointer;
-    text-transform: uppercase;
+    border-radius: 5px;
+
     color: var(--white);
+    text-transform: uppercase;
+
+    background-color: var(--green);
+
+    cursor: pointer;
+
     @media screen and (max-width: $mobile-width) {
       width: 374px;
     }
