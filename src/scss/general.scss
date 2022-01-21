@@ -5,13 +5,14 @@
 
 body {
   position: relative;
-
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+  
   color: var(--white);
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 11px;
   line-height: 1.5;
 
   background-color: var(--black);
+
   @extend %indent-none;
 }
 
@@ -21,42 +22,42 @@ body {
 
   color: var(--white);
   font-weight: 700;
-  text-align: center;
   line-height: 1.5;
+  text-align: center;
   text-transform: uppercase;
 }
 
-h {
+h1 {
+  @include titles-style;
+  font-size: 60px;
 
-  &1 {
-    @include titles-style;
-    font-size: 60px; 
-    @extend %indent-none;
+  @extend %indent-none;
 
-    @media screen and (max-width: $mobile-width) {
-      font-size: 30px;
-    }
+  @media screen and (max-width: $mobile-width) {
+    font-size: 30px;
   }
+}
 
-  &2 {
-    @include titles-style;
-    font-size: 38px;
-    @extend %indent-none;
+h2 {
+  @include titles-style;
+  font-size: 38px;
 
-    @media screen and (max-width: $mobile-width) {
-      font-size: 18px;
-    }
+  @extend %indent-none;
+
+  @media screen and (max-width: $mobile-width) {
+    font-size: 18px;
   }
+}
 
-  &3 {
-    @include titles-style;
-    font-size: 24px;
-    @extend %indent-none;
+h3 {
+  @include titles-style;
+  font-size: 24px;
 
-    @media screen and (max-width: $mobile-width) {
-      font-size: 16px;
-      }
-    }
+  @extend %indent-none;
+
+  @media screen and (max-width: $mobile-width) {
+    font-size: 16px;
+  }
 }
 
 p {

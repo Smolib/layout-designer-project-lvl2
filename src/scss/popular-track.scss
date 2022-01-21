@@ -1,8 +1,10 @@
 .popular-track {
   @extend %section-size ;
   padding-top: 100px;
-  
+
   &__title {
+    margin-bottom: 48px;
+
     text-align: left;
   }
 
@@ -12,15 +14,9 @@
     margin-top: 48px;
     row-gap: 25px;
 
-    @media screen and (max-width: $mobile-width) { 
+    @media screen and (max-width: $mobile-width) {
       grid-template-columns: repeat(1, 1fr);
     }
-  }
-
-  &__title {
-    margin-bottom: 48px;
-
-    text-align: left;
   }
 
   &__track-block {
@@ -44,12 +40,12 @@
   }
 
   &__time {
-    margin-left: auto;
     margin-right: 49px;
+    margin-left: auto;
 
     font-size: 12.8px;
 
-    @media screen and (max-width: $mobile-width) { 
+    @media screen and (max-width: $mobile-width) {
       margin-right: 0;
     }
   }

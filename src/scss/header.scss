@@ -28,6 +28,7 @@
 
     color: var(--white);
     text-transform: uppercase;
+    
     @extend %text-small;
   }
 
@@ -95,14 +96,14 @@
 
   &__input {
     @extend %indent-none;
+    box-sizing: border-box;
     width: 100%;
     height: 25px;
 
-    box-sizing: border-box;
+    background-color: var(--dark);
+
     border: 0px;
     border-radius: 25px;
-
-    background-color: var(--dark);
 
     &::placeholder {
       padding: 5px 0 5px 10px;

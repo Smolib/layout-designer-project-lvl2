@@ -9,7 +9,7 @@
   max-height: 713px;
   padding: 200px 120px;
 
-  background-image: url('../images/Morten\ Harket.png');
+  background-image: url("../images/Morten\ Harket.png");
   background-position: center;
   background-size: cover;
 
@@ -44,19 +44,17 @@
     margin-right: 19px;
     margin-bottom: 24px;
     padding: 20px 30px;
-
+    
+    color: var(--white);
     font-size: 12.8px;
+    text-transform: uppercase;
 
     border: 0;
     border-radius: 5px;
 
-    color: var(--white);
-    text-transform: uppercase;
-
     cursor: pointer;
 
     &_color {
-
       &_purple {
         background-color: var(--purple);
       }

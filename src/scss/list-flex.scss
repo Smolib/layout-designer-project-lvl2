@@ -14,14 +14,12 @@
 
   &__block {
     display: flex;
+    flex-direction: column;
     width: clamp(137px, 20vw, 250px);
     margin-top: 25px;
     margin-right: 50px;
 
-    flex-direction: column;
-
     &_section {
-
       &_similar {
         align-items: center;
       }
@@ -35,12 +33,11 @@
   &__name {
     margin-top: 18px;
 
-    text-align: start;
     font-size: 18px;
     text-transform: capitalize;
+    text-align: start;
 
     &_section {
-
       &_similar {
         width: 100%;
 
@@ -53,7 +50,6 @@
     @extend %text-size-1;
 
     &_section {
-
       &_similar {
         width: 100%;
 

@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 100px;
-  
+
   @media screen and (max-width: 1240px) {
     justify-content: center;
   }
@@ -20,29 +20,31 @@
 
     box-sizing: border-box;
     height: 600px;
-    margin:47px 0 55px;
+    margin: 47px 0 55px;
     padding: 24px 27px 64px 22px;
-
-    border-radius: 15px;
 
     background-repeat: no-repeat;
     background-size: cover;
 
-    &_type {
+    border-radius: 15px;
 
+    &_type {
       &_free {
-        background-image: url(../images/subscribe_1.png);
         width: 368.2px;
+
+        background-image: url("../images/subscribe_1.png");
       }
 
       &_standart {
-        background-image: url(../images/subscribe_2.png);
         width: 369.2px;
+
+        background-image: url("../images/subscribe_2.png");
       }
 
       &_premium {
-        background-image: url(../images/subscribe_3.png);
         width: 368.8px;
+
+        background-image: url("../images/subscribe_3.png");
       }
     }
 
@@ -54,7 +56,7 @@
 
       &:first-of-type {
         margin-top: 43px;
-        margin-right: 0px;
+        margin-right: 0;
       }
     }
   }
@@ -66,7 +68,7 @@
   &__price {
     display: flex;
     align-items: center;
-    justify-content:  center;
+    justify-content: center;
 
     width: 100%;
     margin: 200px 0 40px;
@@ -74,6 +76,7 @@
 
   &__price-value {
     margin-right: 16px;
+
     @extend %text-size-7;
     line-height: 1;
   }
@@ -86,8 +89,8 @@
   &__form-description {
     margin-top: 64px;
 
-    text-align: center;
     font-size: 12.8px;
+    text-align: center;
 
     @media screen and (max-width: $mobile-width) {
       margin-top: 66px;
@@ -98,12 +101,12 @@
     width: 318px;
     height: 66px;
     padding: 20px 30px;
-    
-    border: 2px solid var(--white);
-    border-radius: 3px;
 
     color: var(--white);
     text-transform: uppercase;
+
+    border: 2px solid var(--white);
+    border-radius: 3px;
 
     background-color: transparent;
 
@@ -115,6 +118,7 @@
     width: 100%;
 
     text-align: center;
+
     @extend %text-size-1;
   }
 }

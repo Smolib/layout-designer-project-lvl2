@@ -48,8 +48,8 @@
 
 .list-flex, .popular-track, .footer__menu-bottom, .footer__menu-top, .app, .news, .pricing-forms, .header {
   box-sizing: border-box;
-  max-width: 1240px;
   width: 100%;
+  max-width: 1240px;
   margin: auto;
   padding-right: 20px;
   padding-left: 20px;
@@ -61,8 +61,8 @@
 }
 body {
   position: relative;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
   color: var(--white);
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 11px;
   line-height: 1.5;
   background-color: var(--black);
@@ -73,8 +73,8 @@ h1 {
   max-width: 1200px;
   color: var(--white);
   font-weight: 700;
-  text-align: center;
   line-height: 1.5;
+  text-align: center;
   text-transform: uppercase;
   font-size: 60px;
 }
@@ -83,13 +83,14 @@ h1 {
     font-size: 30px;
   }
 }
+
 h2 {
   width: 100%;
   max-width: 1200px;
   color: var(--white);
   font-weight: 700;
-  text-align: center;
   line-height: 1.5;
+  text-align: center;
   text-transform: uppercase;
   font-size: 38px;
 }
@@ -98,13 +99,14 @@ h2 {
     font-size: 18px;
   }
 }
+
 h3 {
   width: 100%;
   max-width: 1200px;
   color: var(--white);
   font-weight: 700;
-  text-align: center;
   line-height: 1.5;
+  text-align: center;
   text-transform: uppercase;
   font-size: 24px;
 }
@@ -194,12 +196,12 @@ h3 {
   }
 }
 .header__input {
+  box-sizing: border-box;
   width: 100%;
   height: 25px;
-  box-sizing: border-box;
+  background-color: var(--dark);
   border: 0px;
   border-radius: 25px;
-  background-color: var(--dark);
 }
 .header__input::placeholder {
   padding: 5px 0 5px 10px;
@@ -221,8 +223,8 @@ h3 {
 @media screen and (max-width: 800px) {
   .subscription {
     box-sizing: border-box;
-    max-height: 853px;
     height: 853px;
+    max-height: 853px;
     padding: 200px 20px;
   }
 }
@@ -275,11 +277,11 @@ h3 {
   display: block;
   width: 570px;
   height: 57px;
-  border: 0;
-  border-radius: 5px;
   color: var(--white);
   text-transform: uppercase;
   background-color: var(--green);
+  border: 0;
+  border-radius: 5px;
   cursor: pointer;
 }
 @media screen and (max-width: 800px) {
@@ -329,11 +331,11 @@ h3 {
   margin-right: 19px;
   margin-bottom: 24px;
   padding: 20px 30px;
+  color: var(--white);
   font-size: 12.8px;
+  text-transform: uppercase;
   border: 0;
   border-radius: 5px;
-  color: var(--white);
-  text-transform: uppercase;
   cursor: pointer;
 }
 .artist__button_color_purple {
@@ -380,21 +382,21 @@ h3 {
   height: 600px;
   margin: 47px 0 55px;
   padding: 24px 27px 64px 22px;
-  border-radius: 15px;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 15px;
 }
 .pricing-forms__one-form_type_free {
-  background-image: url(../images/subscribe_1.png);
   width: 368.2px;
+  background-image: url("../images/subscribe_1.png");
 }
 .pricing-forms__one-form_type_standart {
-  background-image: url(../images/subscribe_2.png);
   width: 369.2px;
+  background-image: url("../images/subscribe_2.png");
 }
 .pricing-forms__one-form_type_premium {
-  background-image: url(../images/subscribe_3.png);
   width: 368.8px;
+  background-image: url("../images/subscribe_3.png");
 }
 @media screen and (max-width: 800px) {
   .pricing-forms__one-form {
@@ -405,7 +407,7 @@ h3 {
   }
   .pricing-forms__one-form:first-of-type {
     margin-top: 43px;
-    margin-right: 0px;
+    margin-right: 0;
   }
 }
 .pricing-forms__title-price {
@@ -427,8 +429,8 @@ h3 {
 }
 .pricing-forms__form-description {
   margin-top: 64px;
-  text-align: center;
   font-size: 12.8px;
+  text-align: center;
 }
 @media screen and (max-width: 800px) {
   .pricing-forms__form-description {
@@ -439,10 +441,10 @@ h3 {
   width: 318px;
   height: 66px;
   padding: 20px 30px;
-  border: 2px solid var(--white);
-  border-radius: 3px;
   color: var(--white);
   text-transform: uppercase;
+  border: 2px solid var(--white);
+  border-radius: 3px;
   background-color: transparent;
   cursor: pointer;
 }
@@ -500,8 +502,8 @@ h3 {
 }
 .news__news-title {
   margin-bottom: 30px;
-  font-size: 30px;
   font-weight: 400;
+  font-size: 30px;
   line-height: 1.5;
   text-transform: capitalize;
 }
@@ -523,8 +525,8 @@ h3 {
 .news__author {
   margin: 0 18px 0 16px;
   color: var(--orange);
-  text-decoration: none;
   text-transform: uppercase;
+  text-decoration: none;
 }
 .news__button {
   width: 135px;
@@ -569,11 +571,11 @@ h3 {
   margin-bottom: 16px;
 }
 .app__button {
+  padding: 16px 40px;
   color: var(--white);
   background-color: var(--red);
   border: 0;
   border-radius: 32px;
-  padding: 16px 40px;
 }
 
 .footer {
@@ -652,6 +654,7 @@ h3 {
   padding-top: 100px;
 }
 .popular-track__title {
+  margin-bottom: 48px;
   text-align: left;
 }
 .popular-track__grid-block {
@@ -664,10 +667,6 @@ h3 {
   .popular-track__grid-block {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-.popular-track__title {
-  margin-bottom: 48px;
-  text-align: left;
 }
 .popular-track__track-block {
   display: flex;
@@ -686,8 +685,8 @@ h3 {
   font-size: 12.8px;
 }
 .popular-track__time {
-  margin-left: auto;
   margin-right: 49px;
+  margin-left: auto;
   font-size: 12.8px;
 }
 @media screen and (max-width: 800px) {
@@ -709,10 +708,10 @@ h3 {
 }
 .list-flex__block {
   display: flex;
+  flex-direction: column;
   width: clamp(137px, 20vw, 250px);
   margin-top: 25px;
   margin-right: 50px;
-  flex-direction: column;
 }
 .list-flex__block_section_similar {
   align-items: center;
@@ -722,9 +721,9 @@ h3 {
 }
 .list-flex__name {
   margin-top: 18px;
-  text-align: start;
   font-size: 18px;
   text-transform: capitalize;
+  text-align: start;
 }
 .list-flex__name_section_similar {
   width: 100%;

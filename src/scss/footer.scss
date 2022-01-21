@@ -1,6 +1,6 @@
 .footer {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
-  
+
   &__menu-top {
     @extend %section-size;
     display: grid;
@@ -45,7 +45,6 @@
     text-decoration: none;
 
     &_place {
-
       &_bottom {
         margin-right: 16px;
       }
@@ -60,7 +59,6 @@
     list-style: none;
 
     &_direction {
-
       &_row {
         flex-direction: row;
         gap: 24px;
@@ -75,6 +73,7 @@
   &__line {
     color: var(--dark-gray);
     size: 1px;
+
     @extend %indent-none;
   }
 
