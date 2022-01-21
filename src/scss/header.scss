@@ -28,7 +28,7 @@
 
     color: var(--white);
     text-transform: uppercase;
-    
+
     @extend %text-small;
   }
 
@@ -102,7 +102,7 @@
 
     background-color: var(--dark);
 
-    border: 0px;
+    border: 0;
     border-radius: 25px;
 
     &::placeholder {

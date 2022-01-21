@@ -105,10 +105,10 @@
     color: var(--white);
     text-transform: uppercase;
 
+    background-color: transparent;
+
     border: 2px solid var(--white);
     border-radius: 3px;
-
-    background-color: transparent;
 
     @extend %text-size-1;
     cursor: pointer;

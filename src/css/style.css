@@ -62,8 +62,8 @@
 body {
   position: relative;
   color: var(--white);
-  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 11px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   line-height: 1.5;
   background-color: var(--black);
 }
@@ -200,7 +200,7 @@ h3 {
   width: 100%;
   height: 25px;
   background-color: var(--dark);
-  border: 0px;
+  border: 0;
   border-radius: 25px;
 }
 .header__input::placeholder {
@@ -251,9 +251,9 @@ h3 {
   width: 270px;
   height: 50px;
   margin-bottom: 24px;
+  background-color: transparent;
   border: 2px solid var(--dark-gray);
   border-radius: 3px;
-  background-color: transparent;
 }
 .subscription__input-text:first-of-type {
   margin-right: 24px;
@@ -443,9 +443,9 @@ h3 {
   padding: 20px 30px;
   color: var(--white);
   text-transform: uppercase;
+  background-color: transparent;
   border: 2px solid var(--white);
   border-radius: 3px;
-  background-color: transparent;
   cursor: pointer;
 }
 .pricing-forms__description {
@@ -722,8 +722,8 @@ h3 {
 .list-flex__name {
   margin-top: 18px;
   font-size: 18px;
-  text-transform: capitalize;
   text-align: start;
+  text-transform: capitalize;
 }
 .list-flex__name_section_similar {
   width: 100%;
