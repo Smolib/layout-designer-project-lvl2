@@ -7,5 +7,6 @@
 * CSS
 * Адаптивная верстка
 * SASS
+* Макет в Figma
 
 [Ссылка на сайт в pages.](https://smolib.github.io/layout-designer-project-lvl2/src)
